@@ -9,7 +9,7 @@ This week's Challenge required us to modify starter code to create an applicatio
 
 The following image shows the web application's appearance and functionality:
 
-![The Password Generator application displays a red button to "Generate Password".](Pass_Screenshot.png)
+![The Password Generator application displays a red button to "Generate Password".](Assets/Pass_Screenshot.png)
 
 ## Review
 
