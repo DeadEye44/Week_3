@@ -1,4 +1,3 @@
-// Assignment Code
 var generateBtn = document.querySelector("#generate");
 var characterLength = 8;
 var choiceArray = [];
@@ -11,7 +10,6 @@ var numArr = ['0','1','2','3','4','5','6','7','8','9']
 
 generateBtn.addEventListener("click", writePassword);
 
-// Write password to the #password input
 function writePassword() {
     var correctPrompts = getPrompts();
 
@@ -50,12 +48,12 @@ function getPrompts() {
       choiceArray = choiceArray.concat(specialCharArr);
   }
 
+  if (confirm("Would you like to use upper-case characters?")) {
+    choiceArray = choiceArray.concat(upperArr);
+  }
+  
   if (confirm("Would you like to use lower-case characters?")) {
   choiceArray = choiceArray.concat(lowerArr);
-  }
-
-  if (confirm("Would you like to use upper-case characters?")) {
-  choiceArray = choiceArray.concat(upperArr);
   }
 
   if (confirm("Would you like to use numbers?")) {
@@ -63,5 +61,3 @@ function getPrompts() {
   }
   return true;
 }
-
-
